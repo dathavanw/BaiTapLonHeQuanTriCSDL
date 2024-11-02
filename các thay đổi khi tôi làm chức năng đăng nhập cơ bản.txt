@@ -1,0 +1,11 @@
+các thay đổi khi đạt đăng nhập : 
+
+- trong bảng Employee tôi thêm cột Role để xác định vai trò của một người là nhân viên hay quản lý 
+- tôi đã set 3 người có ID là 1 , 2 , 3 là quản lý , còn lại đều là nhân viên 
+- khi thêm một Employee mới thì tự động mặc định cột Role là nhân viên 
+
+- thêm cột password trong bảng Employee cho mỗi người dùng , là một chuỗi ngẫu nhiên gồm 6 chữ số 
+- loại bỏ các ký tự không phải số trong csdl ở cột phone của bảng Employee  
+
+các bạn chạy để cập nhật lại csdl trên máy của mình
+

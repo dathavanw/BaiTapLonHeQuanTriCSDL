@@ -1,0 +1,12 @@
+E:\Học Hệ Quản Trị CSDL\BaiTapLonHeQuanTriCSDL\BaiTapLonHeQuanTriCSDL\bin\Debug\BaiTapLonHeQuanTriCSDL.exe.config
+E:\Học Hệ Quản Trị CSDL\BaiTapLonHeQuanTriCSDL\BaiTapLonHeQuanTriCSDL\bin\Debug\BaiTapLonHeQuanTriCSDL.exe
+E:\Học Hệ Quản Trị CSDL\BaiTapLonHeQuanTriCSDL\BaiTapLonHeQuanTriCSDL\bin\Debug\BaiTapLonHeQuanTriCSDL.pdb
+E:\Học Hệ Quản Trị CSDL\BaiTapLonHeQuanTriCSDL\BaiTapLonHeQuanTriCSDL\obj\Debug\BaiTapLonHeQuanTriCSDL.csproj.AssemblyReference.cache
+E:\Học Hệ Quản Trị CSDL\BaiTapLonHeQuanTriCSDL\BaiTapLonHeQuanTriCSDL\obj\Debug\BaiTapLonHeQuanTriCSDL.Properties.Resources.resources
+E:\Học Hệ Quản Trị CSDL\BaiTapLonHeQuanTriCSDL\BaiTapLonHeQuanTriCSDL\obj\Debug\BaiTapLonHeQuanTriCSDL.csproj.GenerateResource.cache
+E:\Học Hệ Quản Trị CSDL\BaiTapLonHeQuanTriCSDL\BaiTapLonHeQuanTriCSDL\obj\Debug\BaiTapLonHeQuanTriCSDL.csproj.CoreCompileInputs.cache
+E:\Học Hệ Quản Trị CSDL\BaiTapLonHeQuanTriCSDL\BaiTapLonHeQuanTriCSDL\obj\Debug\BaiTapLonHeQuanTriCSDL.exe
+E:\Học Hệ Quản Trị CSDL\BaiTapLonHeQuanTriCSDL\BaiTapLonHeQuanTriCSDL\obj\Debug\BaiTapLonHeQuanTriCSDL.pdb
+E:\Học Hệ Quản Trị CSDL\BaiTapLonHeQuanTriCSDL\BaiTapLonHeQuanTriCSDL\obj\Debug\BaiTapLonHeQuanTriCSDL.frm_login.resources
+E:\Học Hệ Quản Trị CSDL\BaiTapLonHeQuanTriCSDL\BaiTapLonHeQuanTriCSDL\obj\Debug\BaiTapLonHeQuanTriCSDL.frm_staff.resources
+E:\Học Hệ Quản Trị CSDL\BaiTapLonHeQuanTriCSDL\BaiTapLonHeQuanTriCSDL\obj\Debug\BaiTapLonHeQuanTriCSDL.frm_manager.resources
