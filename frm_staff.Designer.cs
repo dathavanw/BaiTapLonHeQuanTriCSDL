@@ -74,16 +74,17 @@
             this.cmbSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.cmbSanPham.ForeColor = System.Drawing.Color.Black;
             this.cmbSanPham.FormattingEnabled = true;
-            this.cmbSanPham.Location = new System.Drawing.Point(0, 140);
-            this.cmbSanPham.Name = "cmbSanPham";
-            this.cmbSanPham.Size = new System.Drawing.Size(200, 24);
-            this.cmbSanPham.TabIndex = 2;
-            this.cmbSanPham.Text = "Quản lý sản phẩm";
             this.cmbSanPham.Items.AddRange(new object[] {
             "Thêm sản phẩm",
             "Sửa sản phẩm",
             "Tạo sản phẩm",
             "Xoá sản phẩm"});
+            this.cmbSanPham.Location = new System.Drawing.Point(0, 140);
+            this.cmbSanPham.Name = "cmbSanPham";
+            this.cmbSanPham.Size = new System.Drawing.Size(200, 24);
+            this.cmbSanPham.TabIndex = 2;
+            this.cmbSanPham.Text = "Quản lý sản phẩm";
+            this.cmbSanPham.SelectedIndexChanged += new System.EventHandler(this.cmbSanPham_SelectedIndexChanged);
             // 
             // cmbTaoHoaDon
             // 
@@ -91,13 +92,13 @@
             this.cmbTaoHoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.cmbTaoHoaDon.ForeColor = System.Drawing.Color.Black;
             this.cmbTaoHoaDon.FormattingEnabled = true;
+            this.cmbTaoHoaDon.Items.AddRange(new object[] {
+            "Thêm hoá đơn"});
             this.cmbTaoHoaDon.Location = new System.Drawing.Point(0, 220);
             this.cmbTaoHoaDon.Name = "cmbTaoHoaDon";
             this.cmbTaoHoaDon.Size = new System.Drawing.Size(200, 24);
             this.cmbTaoHoaDon.TabIndex = 3;
             this.cmbTaoHoaDon.Text = "Tạo hoá đơn";
-            this.cmbTaoHoaDon.Items.AddRange(new object[] {
-            "Thêm hoá đơn"});
             // 
             // pictureBox2
             // 

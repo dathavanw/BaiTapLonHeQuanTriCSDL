@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,21 +13,13 @@ namespace BaiTapLonHeQuanTriCSDL
 {
     public partial class frm_staff : Form
     {
+        public String connectionString = "Data Source=ADMIN-PC ; Initial Catalog=QLMP ; Integrated Security=True; Trust Server Certificate = True;"
         public frm_staff()
         {
-            InitializeComponent();
+            InitializeComponent();           
         }
 
-        private void btnKhoHang_Click(object sender, EventArgs e)
-        {
-
-
-
-
-
-        }
-
-        private void lblDanhSachKho_Click(object sender, EventArgs e)
+        private void cmbSanPham_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
