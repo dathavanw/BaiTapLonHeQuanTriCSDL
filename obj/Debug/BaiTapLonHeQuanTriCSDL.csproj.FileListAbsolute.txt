@@ -9,3 +9,18 @@ E:\Học Hệ Quản Trị CSDL\BaiTapLonHeQuanTriCSDL\BaiTapLonHeQuanTriCSDL\ob
 E:\Học Hệ Quản Trị CSDL\BaiTapLonHeQuanTriCSDL\BaiTapLonHeQuanTriCSDL\obj\Debug\BaiTapLonHeQuanTriCSDL.pdb
 E:\Học Hệ Quản Trị CSDL\BaiTapLonHeQuanTriCSDL\BaiTapLonHeQuanTriCSDL\obj\Debug\BaiTapLonHeQuanTriCSDL.frm_login.resources
 E:\Học Hệ Quản Trị CSDL\BaiTapLonHeQuanTriCSDL\BaiTapLonHeQuanTriCSDL\obj\Debug\BaiTapLonHeQuanTriCSDL.frm_manager.resources
+F:\source\repos\BaiTapLonHeQuanTriCSDL\obj\Debug\BaiTapLonHeQuanTriCSDL.csproj.AssemblyReference.cache
+F:\source\repos\BaiTapLonHeQuanTriCSDL\obj\Debug\BaiTapLonHeQuanTriCSDL.frm_login.resources
+F:\source\repos\BaiTapLonHeQuanTriCSDL\obj\Debug\BaiTapLonHeQuanTriCSDL.Properties.Resources.resources
+F:\source\repos\BaiTapLonHeQuanTriCSDL\obj\Debug\BaiTapLonHeQuanTriCSDL.csproj.GenerateResource.cache
+F:\source\repos\BaiTapLonHeQuanTriCSDL\obj\Debug\BaiTapLonHeQuanTriCSDL.csproj.CoreCompileInputs.cache
+F:\source\repos\BaiTapLonHeQuanTriCSDL\obj\Debug\BaiTapLonHeQuanTriCSDL.exe
+F:\source\repos\BaiTapLonHeQuanTriCSDL\obj\Debug\BaiTapLonHeQuanTriCSDL.pdb
+F:\source\repos\BaiTapLonHeQuanTriCSDL\obj\Debug\BaiTapLonHeQuanTriCSDL.frm_staff.resources
+F:\source\repos\BaiTapLonHeQuanTriCSDL\bin\Debug\BaiTapLonHeQuanTriCSDL.exe.config
+F:\source\repos\BaiTapLonHeQuanTriCSDL\bin\Debug\BaiTapLonHeQuanTriCSDL.exe
+F:\source\repos\BaiTapLonHeQuanTriCSDL\bin\Debug\BaiTapLonHeQuanTriCSDL.pdb
+F:\source\repos\BaiTapLonHeQuanTriCSDL\obj\Debug\BaiTapLonHeQuanTriCSDL.ProductForm.resources
+F:\source\repos\BaiTapLonHeQuanTriCSDL\obj\Debug\BaiTapLonHeQuanTriCSDL.CategoryForm.resources
+F:\source\repos\BaiTapLonHeQuanTriCSDL\obj\Debug\BaiTapLonHeQuanTriCSDL.OrderForm.resources
+F:\source\repos\BaiTapLonHeQuanTriCSDL\obj\Debug\BaiTapLonHeQuanTriCSDL.ShipperOrderForm.resources

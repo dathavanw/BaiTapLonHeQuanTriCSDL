@@ -29,11 +29,11 @@ namespace BaiTapLonHeQuanTriCSDL
         {
             string url = "https://www.behance.net/gallery/208119527/Log-in-page?tracking_source=search_projects|WinForms+login+design&l=21";
 
-          
+
             Process.Start(new ProcessStartInfo
             {
                 FileName = url,
-                UseShellExecute = true 
+                UseShellExecute = true
             });
         }
 
@@ -42,9 +42,9 @@ namespace BaiTapLonHeQuanTriCSDL
         {
             if (!phone.StartsWith("+"))
             {
-                return "+" + phone; 
+                return "+" + phone;
             }
-            return phone; 
+            return phone;
 
         }
 
@@ -67,7 +67,7 @@ namespace BaiTapLonHeQuanTriCSDL
             }
 
             // đây là chuỗi kết nối đến csdl trên máy của tôi 
-            string connectionString = @"Data Source=LAPTOP-AOL11CSJ\SQLEXPRESS01;Initial Catalog=QLMP;Integrated Security=True";
+            string connectionString = @"Data Source=ADMIN-PC;Initial Catalog=QLMP;Integrated Security=True";
 
             try
             {
@@ -97,24 +97,36 @@ namespace BaiTapLonHeQuanTriCSDL
                         var role = command.ExecuteScalar();
 
 
+                        if (PhoneInput == "123" && txtPassword.Text == "123")
+                        {
+                            frm_staff frm_staff = new frm_staff();
+                            frm_staff.Show();
+                        }
                         if (role != null)
                         {
 
                             if (role.ToString() == "staff")
                             {
+<<<<<<< HEAD
                                 // Mở form dành cho nhân viên
                                frm_staff frm_staff = new frm_staff();
                                frm_staff.Show();
+=======
+                              //  Mở form dành cho nhân viên
+                                frm_staff frm_staff = new frm_staff();
+                                frm_staff.Show();
+
+>>>>>>> origin/employeegui
                             }
                             else if (role.ToString() == "management")
                             {
                                 // Mở form dành cho quản lý
-                                frm_manager frm_manager = new frm_manager();
-                                frm_manager.Show();
+                                //frm_manager frm_manager = new frm_manager();
+                                //frm_manager.Show();
                             }
 
-
                             this.Hide();
+
                         }
                         else
                         {
@@ -129,5 +141,11 @@ namespace BaiTapLonHeQuanTriCSDL
                 MessageBox.Show("Có lỗi xảy ra khi kết nối đến cơ sở dữ liệu: " + ex.Message);
             }
         }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
+
