@@ -2,8 +2,15 @@
 {
     partial class frm_staff
     {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -15,14 +22,19 @@
 
         #region Windows Form Designer generated code
 
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_staff));
             this.panelMenu = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.cmbNhaCungCap = new System.Windows.Forms.ComboBox();
-            this.cmbSanPham = new System.Windows.Forms.ComboBox();
-            this.cmbTaoHoaDon = new System.Windows.Forms.ComboBox();
+            this.btnHangHoa = new System.Windows.Forms.Button();
+            this.btnNhaCungCap = new System.Windows.Forms.Button();
+            this.btnSanPham = new System.Windows.Forms.Button();
+            this.btnTaoHoaDon = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -33,9 +45,10 @@
             // 
             this.panelMenu.BackColor = System.Drawing.Color.DarkBlue;
             this.panelMenu.Controls.Add(this.pictureBox1);
-            this.panelMenu.Controls.Add(this.cmbNhaCungCap);
-            this.panelMenu.Controls.Add(this.cmbSanPham);
-            this.panelMenu.Controls.Add(this.cmbTaoHoaDon);
+            this.panelMenu.Controls.Add(this.btnHangHoa);
+            this.panelMenu.Controls.Add(this.btnNhaCungCap);
+            this.panelMenu.Controls.Add(this.btnSanPham);
+            this.panelMenu.Controls.Add(this.btnTaoHoaDon);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
@@ -52,53 +65,60 @@
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
-            // cmbNhaCungCap
+            // btnHangHoa
             // 
-            this.cmbNhaCungCap.BackColor = System.Drawing.SystemColors.Menu;
-            this.cmbNhaCungCap.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.cmbNhaCungCap.ForeColor = System.Drawing.Color.Black;
-            this.cmbNhaCungCap.FormattingEnabled = true;
-            this.cmbNhaCungCap.Items.AddRange(new object[] {
-            "Thêm nhà cung cấp",
-            "Sửa nhà cung cấp",
-            "Tạo nhà cung cấp"});
-            this.cmbNhaCungCap.Location = new System.Drawing.Point(0, 180);
-            this.cmbNhaCungCap.Name = "cmbNhaCungCap";
-            this.cmbNhaCungCap.Size = new System.Drawing.Size(200, 24);
-            this.cmbNhaCungCap.TabIndex = 3;
-            this.cmbNhaCungCap.Text = "Quản lý loại sản phẩm";
+            this.btnHangHoa.FlatAppearance.BorderSize = 0;
+            this.btnHangHoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHangHoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.btnHangHoa.ForeColor = System.Drawing.Color.White;
+            this.btnHangHoa.Location = new System.Drawing.Point(0, 220);
+            this.btnHangHoa.Name = "btnHangHoa";
+            this.btnHangHoa.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnHangHoa.Size = new System.Drawing.Size(200, 40);
+            this.btnHangHoa.TabIndex = 4;
+            this.btnHangHoa.Text = "Quản lý đơn hàng";
+            this.btnHangHoa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHangHoa.UseVisualStyleBackColor = true;
+            this.btnHangHoa.Click += new System.EventHandler(this.btnHangHoa_Click);
             // 
-            // cmbSanPham
+            // btnNhaCungCap
             // 
-            this.cmbSanPham.BackColor = System.Drawing.SystemColors.Info;
-            this.cmbSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.cmbSanPham.ForeColor = System.Drawing.Color.Black;
-            this.cmbSanPham.FormattingEnabled = true;
-            this.cmbSanPham.Items.AddRange(new object[] {
-            "Thêm sản phẩm",
-            "Sửa sản phẩm",
-            "Tạo sản phẩm",
-            "Xoá sản phẩm"});
-            this.cmbSanPham.Location = new System.Drawing.Point(0, 140);
-            this.cmbSanPham.Name = "cmbSanPham";
-            this.cmbSanPham.Size = new System.Drawing.Size(200, 24);
-            this.cmbSanPham.TabIndex = 2;
-            this.cmbSanPham.Text = "Quản lý sản phẩm";
-            this.cmbSanPham.SelectedIndexChanged += new System.EventHandler(this.cmbSanPham_SelectedIndexChanged);
+            this.btnNhaCungCap.FlatAppearance.BorderSize = 0;
+            this.btnNhaCungCap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNhaCungCap.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.btnNhaCungCap.ForeColor = System.Drawing.Color.White;
+            this.btnNhaCungCap.Location = new System.Drawing.Point(0, 180);
+            this.btnNhaCungCap.Name = "btnNhaCungCap";
+            this.btnNhaCungCap.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnNhaCungCap.Size = new System.Drawing.Size(200, 40);
+            this.btnNhaCungCap.TabIndex = 3;
+            this.btnNhaCungCap.Text = "Quản lý loại sản phẩm";
+            this.btnNhaCungCap.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNhaCungCap.UseVisualStyleBackColor = true;
+            this.btnNhaCungCap.Click += new System.EventHandler(this.btnNhaCungCap_Click);
             // 
-            // cmbTaoHoaDon
+            // btnSanPham
             // 
-            this.cmbTaoHoaDon.BackColor = System.Drawing.SystemColors.Menu;
-            this.cmbTaoHoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.cmbTaoHoaDon.ForeColor = System.Drawing.Color.Black;
-            this.cmbTaoHoaDon.FormattingEnabled = true;
-            this.cmbTaoHoaDon.Items.AddRange(new object[] {
-            "Thêm hoá đơn"});
-            this.cmbTaoHoaDon.Location = new System.Drawing.Point(0, 220);
-            this.cmbTaoHoaDon.Name = "cmbTaoHoaDon";
-            this.cmbTaoHoaDon.Size = new System.Drawing.Size(200, 24);
-            this.cmbTaoHoaDon.TabIndex = 3;
-            this.cmbTaoHoaDon.Text = "Tạo hoá đơn";
+            this.btnSanPham.FlatAppearance.BorderSize = 0;
+            this.btnSanPham.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.btnSanPham.ForeColor = System.Drawing.Color.White;
+            this.btnSanPham.Location = new System.Drawing.Point(0, 140);
+            this.btnSanPham.Name = "btnSanPham";
+            this.btnSanPham.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnSanPham.Size = new System.Drawing.Size(200, 40);
+            this.btnSanPham.TabIndex = 2;
+            this.btnSanPham.Text = "Quản lý sản phẩm";
+            this.btnSanPham.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSanPham.UseVisualStyleBackColor = true;
+            this.btnSanPham.Click += new System.EventHandler(this.btnSanPham_Click);
+            // 
+            // btnTaoHoaDon
+            // 
+            this.btnTaoHoaDon.Location = new System.Drawing.Point(0, 0);
+            this.btnTaoHoaDon.Name = "btnTaoHoaDon";
+            this.btnTaoHoaDon.Size = new System.Drawing.Size(75, 23);
+            this.btnTaoHoaDon.TabIndex = 8;
             // 
             // pictureBox2
             // 
@@ -132,10 +152,11 @@
         #endregion
 
         private System.Windows.Forms.Panel panelMenu;
-        private System.Windows.Forms.ComboBox cmbSanPham;
-        private System.Windows.Forms.ComboBox cmbNhaCungCap;
+        private System.Windows.Forms.Button btnSanPham;
+        private System.Windows.Forms.Button btnNhaCungCap;
+        private System.Windows.Forms.Button btnHangHoa;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.ComboBox cmbTaoHoaDon;
+        private System.Windows.Forms.Button btnTaoHoaDon;
         private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

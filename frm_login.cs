@@ -29,11 +29,11 @@ namespace BaiTapLonHeQuanTriCSDL
         {
             string url = "https://www.behance.net/gallery/208119527/Log-in-page?tracking_source=search_projects|WinForms+login+design&l=21";
 
-          
+
             Process.Start(new ProcessStartInfo
             {
                 FileName = url,
-                UseShellExecute = true 
+                UseShellExecute = true
             });
         }
 
@@ -42,9 +42,9 @@ namespace BaiTapLonHeQuanTriCSDL
         {
             if (!phone.StartsWith("+"))
             {
-                return "+" + phone; 
+                return "+" + phone;
             }
-            return phone; 
+            return phone;
 
         }
 
@@ -52,34 +52,34 @@ namespace BaiTapLonHeQuanTriCSDL
         private void btn_login_Click(object sender, EventArgs e)
         {
             // đây là chuỗi kết nối đến csdl trên máy của tôi 
-          //  string connectionString = @"Data Source=ADMIN-PC;Initial Catalog=QLMP;Integrated Security=True;Trust Server Certificate=True";
+            string connectionString = @"Data Source=ADMIN-PC;Initial Catalog=QLMP;Integrated Security=True";
 
-           // try
-         //   {
+            try
+            {
 
 
-               // using (SqlConnection connection = new SqlConnection(connectionString))
-               // {
-                   // connection.Open();
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
 
 
 
                     // 3. Truy vấn để kiểm tra thông tin đăng nhập
-                 //   string query = "SELECT Role FROM Employees WHERE phone = @phone and password = @password";
+                    string query = "SELECT Role FROM Employees WHERE phone = @phone and password = @password";
 
 
-                 //   using (SqlCommand command = new SqlCommand(query, connection))
-                    //{
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
 
 
 
-                      string PhoneInput = NormalizePhone(txtUsername.Text);
+                        string PhoneInput = NormalizePhone(txtUsername.Text);
 
-                    //    command.Parameters.AddWithValue("@phone", PhoneInput);
-                    //    command.Parameters.AddWithValue("@password", txtPassword.Text);
+                        command.Parameters.AddWithValue("@phone", PhoneInput);
+                        command.Parameters.AddWithValue("@password", txtPassword.Text);
 
 
-                      //  var role = command.ExecuteScalar();
+                        var role = command.ExecuteScalar();
 
 
                         if (PhoneInput == "123" && txtPassword.Text == "123")
@@ -87,38 +87,39 @@ namespace BaiTapLonHeQuanTriCSDL
                             frm_staff frm_staff = new frm_staff();
                             frm_staff.Show();
                         }
-                        //    if (role != null)
-                        //{
+                        if (role != null)
+                        {
 
-                        //    if (role.ToString() == "staff")
-                        //    {
-                                // Mở form dành cho nhân viên
-                        //        frm_staff frm_staff = new frm_staff();
-                        //        frm_staff.Show();
+                            if (role.ToString() == "staff")
+                            {
+                              //  Mở form dành cho nhân viên
+                                frm_staff frm_staff = new frm_staff();
+                                frm_staff.Show();
 
-                        //    }
-                        //    else if (role.ToString() == "management")
-                        //    {
-                        //        // Mở form dành cho quản lý
-                        //        frm_manager frm_manager = new frm_manager();
-                        //        frm_manager.Show();
-                        //    }
+                            }
+                            else if (role.ToString() == "management")
+                            {
+                                // Mở form dành cho quản lý
+                                //frm_manager frm_manager = new frm_manager();
+                                //frm_manager.Show();
+                            }
 
-                        //    this.Hide();
+                            this.Hide();
 
-                        //}
-                        //else
-                        //{
+                        }
+                        else
+                        {
 
-                        //    MessageBox.Show("Sai thông tin đăng nhập! Vui lòng kiểm tra lại !");
-                        //}
+                            MessageBox.Show("Sai thông tin đăng nhập! Vui lòng kiểm tra lại !");
+                        }
                     }
                 }
             }
-            //catch (SqlException ex)
-            //{
-            //    MessageBox.Show("Có lỗi xảy ra khi kết nối đến cơ sở dữ liệu: " + ex.Message);
-            //}
-      //  }
-   // }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("Có lỗi xảy ra khi kết nối đến cơ sở dữ liệu: " + ex.Message);
+            }
+        }
+    }
+}
 
