@@ -113,16 +113,16 @@ namespace BaiTapLonHeQuanTriCSDL
                                frm_staff.Show();
 =======
                               //  Mở form dành cho nhân viên
-                                frm_staff frm_staff = new frm_staff();
-                                frm_staff.Show();
+                             //   frm_staff frm_staff = new frm_staff();
+                              //  frm_staff.Show();
 
 >>>>>>> origin/employeegui
                             }
                             else if (role.ToString() == "management")
                             {
                                 // Mở form dành cho quản lý
-                                //frm_manager frm_manager = new frm_manager();
-                                //frm_manager.Show();
+                                frm_manager frm_manager = new frm_manager();
+                                frm_manager.Show();
                             }
 
                             this.Hide();
