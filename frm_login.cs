@@ -51,6 +51,21 @@ namespace BaiTapLonHeQuanTriCSDL
 
         private void btn_login_Click(object sender, EventArgs e)
         {
+
+            if (string.IsNullOrWhiteSpace(txtUsername.Text))
+            {
+                MessageBox.Show("Vui lòng nhập số điện thoại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtUsername.Focus(); 
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtPassword.Text))
+            {
+                MessageBox.Show("Vui lòng nhập mật khẩu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtPassword.Focus(); 
+                return;
+            }
+
             // đây là chuỗi kết nối đến csdl trên máy của tôi 
             string connectionString = @"Data Source=LAPTOP-AOL11CSJ\SQLEXPRESS01;Initial Catalog=QLMP;Integrated Security=True";
 
@@ -88,8 +103,8 @@ namespace BaiTapLonHeQuanTriCSDL
                             if (role.ToString() == "staff")
                             {
                                 // Mở form dành cho nhân viên
-                                frm_staff frm_staff = new frm_staff();
-                                frm_staff.Show();
+                               frm_staff frm_staff = new frm_staff();
+                               frm_staff.Show();
                             }
                             else if (role.ToString() == "management")
                             {
