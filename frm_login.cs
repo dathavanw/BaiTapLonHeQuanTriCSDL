@@ -97,6 +97,14 @@ namespace BaiTapLonHeQuanTriCSDL
                         var role = command.ExecuteScalar();
 
 
+<<<<<<< Updated upstream
+=======
+                    //    if (PhoneInput == "123" && txtPassword.Text == "123")
+                     //   {
+                      //      frm_staff frm_staff = new frm_staff();
+                      //     frm_staff.Show();
+                      // }
+>>>>>>> Stashed changes
                         if (role != null)
                         {
 
