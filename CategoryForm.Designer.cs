@@ -48,7 +48,6 @@ namespace BaiTapLonHeQuanTriCSDL
             this.dataGridViewCategories.AutoGenerateColumns = true;
             this.dataGridViewCategories.AllowUserToAddRows = false;
             this.dataGridViewCategories.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewCategories.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewCategories.MultiSelect = false;
 
             // Thêm sự kiện SelectionChanged để bắt sự kiện chọn dòng

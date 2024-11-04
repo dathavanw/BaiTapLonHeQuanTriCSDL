@@ -83,6 +83,7 @@ namespace BaiTapLonHeQuanTriCSDL
                         // Đặt tên hiển thị cho các cột
                         if (dataGridViewCategories.Columns["Category_ID"] != null)
                             dataGridViewCategories.Columns["Category_ID"].HeaderText = "ID";
+                            dataGridViewCategories.Columns["Category_ID"].Visible = false;
                         if (dataGridViewCategories.Columns["CategoryName"] != null)
                             dataGridViewCategories.Columns["CategoryName"].HeaderText = "Category Name";
                         if (dataGridViewCategories.Columns["Description"] != null)

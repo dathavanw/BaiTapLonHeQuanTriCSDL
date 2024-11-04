@@ -37,5 +37,11 @@ namespace BaiTapLonHeQuanTriCSDL
             var orderForm = new OrderForm();
             orderForm.Show();
         }
+
+        private void btnGiaoHang_Click(object sender, EventArgs e)
+        {
+            var shipperorderForm = new ShipperOrderForm();
+            shipperorderForm.Show();
+        }
     }
 }

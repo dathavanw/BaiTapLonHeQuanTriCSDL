@@ -34,7 +34,7 @@
             this.btnHangHoa = new System.Windows.Forms.Button();
             this.btnNhaCungCap = new System.Windows.Forms.Button();
             this.btnSanPham = new System.Windows.Forms.Button();
-            this.btnTaoHoaDon = new System.Windows.Forms.Button();
+            this.btnGiaoHang = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -48,7 +48,7 @@
             this.panelMenu.Controls.Add(this.btnHangHoa);
             this.panelMenu.Controls.Add(this.btnNhaCungCap);
             this.panelMenu.Controls.Add(this.btnSanPham);
-            this.panelMenu.Controls.Add(this.btnTaoHoaDon);
+            this.panelMenu.Controls.Add(this.btnGiaoHang);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
@@ -113,12 +113,21 @@
             this.btnSanPham.UseVisualStyleBackColor = true;
             this.btnSanPham.Click += new System.EventHandler(this.btnSanPham_Click);
             // 
-            // btnTaoHoaDon
+            // btnGiaoHang
             // 
-            this.btnTaoHoaDon.Location = new System.Drawing.Point(0, 0);
-            this.btnTaoHoaDon.Name = "btnTaoHoaDon";
-            this.btnTaoHoaDon.Size = new System.Drawing.Size(75, 23);
-            this.btnTaoHoaDon.TabIndex = 8;
+            this.btnGiaoHang.FlatAppearance.BorderSize = 0;
+            this.btnGiaoHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGiaoHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.btnGiaoHang.ForeColor = System.Drawing.Color.White;
+            this.btnGiaoHang.Location = new System.Drawing.Point(0, 260);
+            this.btnGiaoHang.Name = "btnGiaoHang";
+            this.btnGiaoHang.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnGiaoHang.Size = new System.Drawing.Size(200, 40);
+            this.btnGiaoHang.TabIndex = 2;
+            this.btnGiaoHang.Text = "Quản lý giao hàng";
+            this.btnGiaoHang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGiaoHang.UseVisualStyleBackColor = true;
+            this.btnGiaoHang.Click += new System.EventHandler(this.btnGiaoHang_Click);
             // 
             // pictureBox2
             // 
@@ -156,7 +165,7 @@
         private System.Windows.Forms.Button btnNhaCungCap;
         private System.Windows.Forms.Button btnHangHoa;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnTaoHoaDon;
+        private System.Windows.Forms.Button btnGiaoHang;
         private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

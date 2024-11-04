@@ -8,7 +8,7 @@ namespace BaiTapLonHeQuanTriCSDL
     public partial class ProductForm : Form
     {
         private SqlConnection conn;
-        private string connectionString = "Data Source=ADMIN-PC ; Initial Catalog=QLMP ; Integrated Security=True; ";
+        private string connectionString = "Data Source=ADMIN-PC; Initial Catalog=QLMP; Integrated Security=True;";
 
         public ProductForm()
         {
@@ -57,7 +57,7 @@ namespace BaiTapLonHeQuanTriCSDL
             using (conn = new SqlConnection(connectionString))
             {
                 conn.Open();
-                string query = @"SELECT p.Product_ID , p.ProductName, c.CategoryName, s.CompanyName, 
+                string query = @"SELECT p.Product_ID, p.ProductName, c.CategoryName, s.CompanyName, 
                                p.UnitPrice, p.Quantity, p.Size, p.Color
                                FROM Products p
                                INNER JOIN Categories c ON p.Category_ID = c.Category_ID
@@ -67,6 +67,7 @@ namespace BaiTapLonHeQuanTriCSDL
                 DataTable dt = new DataTable();
                 adapter.Fill(dt);
                 dgvProducts.DataSource = dt;
+                dgvProducts.Columns["Product_ID"].Visible = false;
             }
         }
 
@@ -209,6 +210,36 @@ namespace BaiTapLonHeQuanTriCSDL
                 txtQuantity.Text = row.Cells["Quantity"].Value.ToString();
                 txtSize.Text = row.Cells["Size"].Value.ToString();
                 txtColor.Text = row.Cells["Color"].Value.ToString();
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string productName = textBox1.Text.Trim();
+            SearchProduct(productName);
+        }
+
+        private void SearchProduct(string productName)
+        {
+            using (conn = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
+                    string query = "searchproduct"; // Stored procedure name
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@productname", productName);
+
+                    SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                    DataTable dt = new DataTable();
+                    adapter.Fill(dt);
+                    dgvProducts.DataSource = dt;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
             }
         }
     }

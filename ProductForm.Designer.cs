@@ -51,13 +51,16 @@
             this.lblQuantity = new System.Windows.Forms.Label();
             this.lblSize = new System.Windows.Forms.Label();
             this.lblColor = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvProducts
             // 
             this.dgvProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProducts.Location = new System.Drawing.Point(9, 203);
+            this.dgvProducts.Location = new System.Drawing.Point(19, 221);
             this.dgvProducts.Margin = new System.Windows.Forms.Padding(2);
             this.dgvProducts.Name = "dgvProducts";
             this.dgvProducts.Size = new System.Drawing.Size(570, 162);
@@ -66,7 +69,7 @@
             // 
             // txtProductName
             // 
-            this.txtProductName.Location = new System.Drawing.Point(82, 16);
+            this.txtProductName.Location = new System.Drawing.Point(337, 92);
             this.txtProductName.Margin = new System.Windows.Forms.Padding(2);
             this.txtProductName.Name = "txtProductName";
             this.txtProductName.Size = new System.Drawing.Size(151, 20);
@@ -107,7 +110,7 @@
             // cmbCategory
             // 
             this.cmbCategory.FormattingEnabled = true;
-            this.cmbCategory.Location = new System.Drawing.Point(82, 41);
+            this.cmbCategory.Location = new System.Drawing.Point(337, 132);
             this.cmbCategory.Margin = new System.Windows.Forms.Padding(2);
             this.cmbCategory.Name = "cmbCategory";
             this.cmbCategory.Size = new System.Drawing.Size(151, 21);
@@ -116,7 +119,7 @@
             // cmbSupplier
             // 
             this.cmbSupplier.FormattingEnabled = true;
-            this.cmbSupplier.Location = new System.Drawing.Point(82, 65);
+            this.cmbSupplier.Location = new System.Drawing.Point(337, 167);
             this.cmbSupplier.Margin = new System.Windows.Forms.Padding(2);
             this.cmbSupplier.Name = "cmbSupplier";
             this.cmbSupplier.Size = new System.Drawing.Size(151, 21);
@@ -124,7 +127,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(262, 16);
+            this.btnAdd.Location = new System.Drawing.Point(514, 94);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 24);
@@ -135,7 +138,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(262, 49);
+            this.btnUpdate.Location = new System.Drawing.Point(514, 134);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 24);
@@ -146,7 +149,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(262, 81);
+            this.btnDelete.Location = new System.Drawing.Point(514, 170);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 24);
@@ -157,7 +160,7 @@
             // 
             // lblProductName
             // 
-            this.lblProductName.Location = new System.Drawing.Point(8, 19);
+            this.lblProductName.Location = new System.Drawing.Point(258, 93);
             this.lblProductName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblProductName.Name = "lblProductName";
             this.lblProductName.Size = new System.Drawing.Size(75, 19);
@@ -166,16 +169,16 @@
             // 
             // lblCategory
             // 
-            this.lblCategory.Location = new System.Drawing.Point(8, 43);
+            this.lblCategory.Location = new System.Drawing.Point(258, 134);
             this.lblCategory.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCategory.Name = "lblCategory";
-            this.lblCategory.Size = new System.Drawing.Size(75, 19);
+            this.lblCategory.Size = new System.Drawing.Size(84, 19);
             this.lblCategory.TabIndex = 13;
-            this.lblCategory.Text = "Loại sản phẩm";
+            this.lblCategory.Text = "Loại sản phẩm\r\n";
             // 
             // lblSupplier
             // 
-            this.lblSupplier.Location = new System.Drawing.Point(8, 67);
+            this.lblSupplier.Location = new System.Drawing.Point(258, 167);
             this.lblSupplier.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSupplier.Name = "lblSupplier";
             this.lblSupplier.Size = new System.Drawing.Size(75, 19);
@@ -218,11 +221,40 @@
             this.lblColor.TabIndex = 18;
             this.lblColor.Text = "Màu sắc";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(47, 31);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(98, 13);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Tìm kiếm sản phẩm";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(170, 31);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(246, 20);
+            this.textBox1.TabIndex = 20;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(456, 31);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 21;
+            this.button1.Text = "Submit";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // ProductForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 406);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvProducts);
             this.Controls.Add(this.txtProductName);
             this.Controls.Add(this.txtUnitPrice);
@@ -249,5 +281,9 @@
             this.PerformLayout();
 
         }
+
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button1;
     }
 }

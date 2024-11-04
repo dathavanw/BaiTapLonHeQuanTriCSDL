@@ -24,3 +24,4 @@ F:\source\repos\BaiTapLonHeQuanTriCSDL\bin\Debug\BaiTapLonHeQuanTriCSDL.pdb
 F:\source\repos\BaiTapLonHeQuanTriCSDL\obj\Debug\BaiTapLonHeQuanTriCSDL.ProductForm.resources
 F:\source\repos\BaiTapLonHeQuanTriCSDL\obj\Debug\BaiTapLonHeQuanTriCSDL.CategoryForm.resources
 F:\source\repos\BaiTapLonHeQuanTriCSDL\obj\Debug\BaiTapLonHeQuanTriCSDL.OrderForm.resources
+F:\source\repos\BaiTapLonHeQuanTriCSDL\obj\Debug\BaiTapLonHeQuanTriCSDL.ShipperOrderForm.resources
