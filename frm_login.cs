@@ -103,8 +103,8 @@ namespace BaiTapLonHeQuanTriCSDL
                             if (role.ToString() == "staff")
                             {
                                 // Mở form dành cho nhân viên
-                               frm_staff frm_staff = new frm_staff();
-                               frm_staff.Show();
+                                frm_staff frm_staff = new frm_staff();
+                                frm_staff.Show();
                             }
                             else if (role.ToString() == "management")
                             {

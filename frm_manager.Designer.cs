@@ -41,9 +41,12 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel_home = new System.Windows.Forms.Panel();
             this.panel_manager_shipper = new System.Windows.Forms.Panel();
+            this.pictute_home = new System.Windows.Forms.PictureBox();
             this.data_ship = new System.Windows.Forms.DataGridView();
             this.label20 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.btn_search_ship = new System.Windows.Forms.Button();
+            this.txt_search_ship = new System.Windows.Forms.TextBox();
             this.button9 = new System.Windows.Forms.Button();
             this.btn_delete_shipper = new System.Windows.Forms.Button();
             this.btn_update_shipper = new System.Windows.Forms.Button();
@@ -58,6 +61,8 @@
             this.data_supp = new System.Windows.Forms.DataGridView();
             this.label15 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.txt_search_supp = new System.Windows.Forms.TextBox();
+            this.btn_search_supp = new System.Windows.Forms.Button();
             this.btn_clear_supplier = new System.Windows.Forms.Button();
             this.btn_delete_supplier = new System.Windows.Forms.Button();
             this.btn_update_supplier = new System.Windows.Forms.Button();
@@ -78,6 +83,8 @@
             this.label27 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.txt_search_employee = new System.Windows.Forms.TextBox();
+            this.btn_search_emp = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -121,20 +128,14 @@
             this.label28 = new System.Windows.Forms.Label();
             this.textBox14 = new System.Windows.Forms.TextBox();
             this.data_shippers = new System.Windows.Forms.DataGridView();
-            this.txt_search_ship = new System.Windows.Forms.TextBox();
-            this.btn_search_ship = new System.Windows.Forms.Button();
-            this.btn_search_supp = new System.Windows.Forms.Button();
-            this.txt_search_supp = new System.Windows.Forms.TextBox();
-            this.btn_search_emp = new System.Windows.Forms.Button();
-            this.txt_search_employee = new System.Windows.Forms.TextBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.pictute_home = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel_home.SuspendLayout();
             this.panel_manager_shipper.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictute_home)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.data_ship)).BeginInit();
             this.panel8.SuspendLayout();
             this.panel_suppliers.SuspendLayout();
@@ -147,7 +148,6 @@
             this.panel_manager_shippers.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.data_shippers)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictute_home)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -306,6 +306,18 @@
             this.panel_manager_shipper.TabIndex = 30;
             this.panel_manager_shipper.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_manager_shipper_Paint);
             // 
+            // pictute_home
+            // 
+            this.pictute_home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(11)))), ((int)(((byte)(97)))));
+            this.pictute_home.Image = ((System.Drawing.Image)(resources.GetObject("pictute_home.Image")));
+            this.pictute_home.Location = new System.Drawing.Point(-3, -4);
+            this.pictute_home.Name = "pictute_home";
+            this.pictute_home.Size = new System.Drawing.Size(1146, 721);
+            this.pictute_home.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictute_home.TabIndex = 31;
+            this.pictute_home.TabStop = false;
+            this.pictute_home.Click += new System.EventHandler(this.pictute_home_Click_1);
+            // 
             // data_ship
             // 
             this.data_ship.AllowUserToAddRows = false;
@@ -353,6 +365,29 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(1115, 396);
             this.panel8.TabIndex = 29;
+            // 
+            // btn_search_ship
+            // 
+            this.btn_search_ship.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_search_ship.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(11)))), ((int)(((byte)(97)))));
+            this.btn_search_ship.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btn_search_ship.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_search_ship.Location = new System.Drawing.Point(939, 6);
+            this.btn_search_ship.Name = "btn_search_ship";
+            this.btn_search_ship.Size = new System.Drawing.Size(140, 52);
+            this.btn_search_ship.TabIndex = 32;
+            this.btn_search_ship.Text = "Search";
+            this.btn_search_ship.UseVisualStyleBackColor = false;
+            this.btn_search_ship.Click += new System.EventHandler(this.btn_search_ship_Click);
+            // 
+            // txt_search_ship
+            // 
+            this.txt_search_ship.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txt_search_ship.Location = new System.Drawing.Point(586, 19);
+            this.txt_search_ship.Name = "txt_search_ship";
+            this.txt_search_ship.Size = new System.Drawing.Size(331, 28);
+            this.txt_search_ship.TabIndex = 31;
+            this.toolTip1.SetToolTip(this.txt_search_ship, "Hãy nhập tên đơn vị vận chuyển !");
             // 
             // button9
             // 
@@ -537,6 +572,29 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(1115, 403);
             this.panel7.TabIndex = 29;
+            // 
+            // txt_search_supp
+            // 
+            this.txt_search_supp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txt_search_supp.Location = new System.Drawing.Point(197, 249);
+            this.txt_search_supp.Name = "txt_search_supp";
+            this.txt_search_supp.Size = new System.Drawing.Size(264, 28);
+            this.txt_search_supp.TabIndex = 32;
+            this.toolTip1.SetToolTip(this.txt_search_supp, "Hãy nhập tên đơn vị cung cấp ! ");
+            // 
+            // btn_search_supp
+            // 
+            this.btn_search_supp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_search_supp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(11)))), ((int)(((byte)(97)))));
+            this.btn_search_supp.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btn_search_supp.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_search_supp.Location = new System.Drawing.Point(31, 237);
+            this.btn_search_supp.Name = "btn_search_supp";
+            this.btn_search_supp.Size = new System.Drawing.Size(140, 52);
+            this.btn_search_supp.TabIndex = 31;
+            this.btn_search_supp.Text = "Search";
+            this.btn_search_supp.UseVisualStyleBackColor = false;
+            this.btn_search_supp.Click += new System.EventHandler(this.btn_search_supp_Click);
             // 
             // btn_clear_supplier
             // 
@@ -769,6 +827,30 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1115, 401);
             this.panel5.TabIndex = 29;
+            // 
+            // txt_search_employee
+            // 
+            this.txt_search_employee.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txt_search_employee.Location = new System.Drawing.Point(638, 249);
+            this.txt_search_employee.Name = "txt_search_employee";
+            this.txt_search_employee.Size = new System.Drawing.Size(238, 28);
+            this.txt_search_employee.TabIndex = 32;
+            this.toolTip1.SetToolTip(this.txt_search_employee, "Hãy nhập số điện thoại !");
+            this.txt_search_employee.TextChanged += new System.EventHandler(this.txt_search_employee_TextChanged);
+            // 
+            // btn_search_emp
+            // 
+            this.btn_search_emp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_search_emp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(11)))), ((int)(((byte)(97)))));
+            this.btn_search_emp.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btn_search_emp.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_search_emp.Location = new System.Drawing.Point(480, 237);
+            this.btn_search_emp.Name = "btn_search_emp";
+            this.btn_search_emp.Size = new System.Drawing.Size(140, 52);
+            this.btn_search_emp.TabIndex = 31;
+            this.btn_search_emp.Text = "Search";
+            this.btn_search_emp.UseVisualStyleBackColor = false;
+            this.btn_search_emp.Click += new System.EventHandler(this.btn_search_emp_Click);
             // 
             // button3
             // 
@@ -1225,88 +1307,6 @@
             this.data_shippers.Size = new System.Drawing.Size(1115, 249);
             this.data_shippers.TabIndex = 0;
             // 
-            // txt_search_ship
-            // 
-            this.txt_search_ship.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txt_search_ship.Location = new System.Drawing.Point(586, 19);
-            this.txt_search_ship.Name = "txt_search_ship";
-            this.txt_search_ship.Size = new System.Drawing.Size(331, 28);
-            this.txt_search_ship.TabIndex = 31;
-            this.toolTip1.SetToolTip(this.txt_search_ship, "Hãy nhập tên đơn vị vận chuyển !");
-            // 
-            // btn_search_ship
-            // 
-            this.btn_search_ship.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_search_ship.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(11)))), ((int)(((byte)(97)))));
-            this.btn_search_ship.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btn_search_ship.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_search_ship.Location = new System.Drawing.Point(939, 6);
-            this.btn_search_ship.Name = "btn_search_ship";
-            this.btn_search_ship.Size = new System.Drawing.Size(140, 52);
-            this.btn_search_ship.TabIndex = 32;
-            this.btn_search_ship.Text = "Search";
-            this.btn_search_ship.UseVisualStyleBackColor = false;
-            this.btn_search_ship.Click += new System.EventHandler(this.btn_search_ship_Click);
-            // 
-            // btn_search_supp
-            // 
-            this.btn_search_supp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_search_supp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(11)))), ((int)(((byte)(97)))));
-            this.btn_search_supp.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btn_search_supp.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_search_supp.Location = new System.Drawing.Point(31, 237);
-            this.btn_search_supp.Name = "btn_search_supp";
-            this.btn_search_supp.Size = new System.Drawing.Size(140, 52);
-            this.btn_search_supp.TabIndex = 31;
-            this.btn_search_supp.Text = "Search";
-            this.btn_search_supp.UseVisualStyleBackColor = false;
-            this.btn_search_supp.Click += new System.EventHandler(this.btn_search_supp_Click);
-            // 
-            // txt_search_supp
-            // 
-            this.txt_search_supp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txt_search_supp.Location = new System.Drawing.Point(197, 249);
-            this.txt_search_supp.Name = "txt_search_supp";
-            this.txt_search_supp.Size = new System.Drawing.Size(264, 28);
-            this.txt_search_supp.TabIndex = 32;
-            this.toolTip1.SetToolTip(this.txt_search_supp, "Hãy nhập tên đơn vị cung cấp ! ");
-            // 
-            // btn_search_emp
-            // 
-            this.btn_search_emp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_search_emp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(11)))), ((int)(((byte)(97)))));
-            this.btn_search_emp.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btn_search_emp.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_search_emp.Location = new System.Drawing.Point(480, 237);
-            this.btn_search_emp.Name = "btn_search_emp";
-            this.btn_search_emp.Size = new System.Drawing.Size(140, 52);
-            this.btn_search_emp.TabIndex = 31;
-            this.btn_search_emp.Text = "Search";
-            this.btn_search_emp.UseVisualStyleBackColor = false;
-            this.btn_search_emp.Click += new System.EventHandler(this.btn_search_emp_Click);
-            // 
-            // txt_search_employee
-            // 
-            this.txt_search_employee.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txt_search_employee.Location = new System.Drawing.Point(638, 249);
-            this.txt_search_employee.Name = "txt_search_employee";
-            this.txt_search_employee.Size = new System.Drawing.Size(238, 28);
-            this.txt_search_employee.TabIndex = 32;
-            this.toolTip1.SetToolTip(this.txt_search_employee, "Hãy nhập số điện thoại !");
-            this.txt_search_employee.TextChanged += new System.EventHandler(this.txt_search_employee_TextChanged);
-            // 
-            // pictute_home
-            // 
-            this.pictute_home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(11)))), ((int)(((byte)(97)))));
-            this.pictute_home.Image = ((System.Drawing.Image)(resources.GetObject("pictute_home.Image")));
-            this.pictute_home.Location = new System.Drawing.Point(-3, -4);
-            this.pictute_home.Name = "pictute_home";
-            this.pictute_home.Size = new System.Drawing.Size(1146, 721);
-            this.pictute_home.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictute_home.TabIndex = 31;
-            this.pictute_home.TabStop = false;
-            this.pictute_home.Click += new System.EventHandler(this.pictute_home_Click_1);
-            // 
             // frm_manager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1326,6 +1326,7 @@
             this.panel_home.ResumeLayout(false);
             this.panel_manager_shipper.ResumeLayout(false);
             this.panel_manager_shipper.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictute_home)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.data_ship)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
@@ -1345,7 +1346,6 @@
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.data_shippers)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictute_home)).EndInit();
             this.ResumeLayout(false);
 
         }
