@@ -55,14 +55,22 @@ namespace BaiTapLonHeQuanTriCSDL
             if (string.IsNullOrWhiteSpace(txtUsername.Text))
             {
                 MessageBox.Show("Vui lòng nhập số điện thoại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+<<<<<<< HEAD
                 txtUsername.Focus();
+=======
+                txtUsername.Focus(); 
+>>>>>>> c404c30353f3d4f91a6baa124b854ee47846381f
                 return;
             }
 
             if (string.IsNullOrWhiteSpace(txtPassword.Text))
             {
                 MessageBox.Show("Vui lòng nhập mật khẩu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+<<<<<<< HEAD
                 txtPassword.Focus();
+=======
+                txtPassword.Focus(); 
+>>>>>>> c404c30353f3d4f91a6baa124b854ee47846381f
                 return;
             }
 
@@ -96,6 +104,18 @@ namespace BaiTapLonHeQuanTriCSDL
 
                         var role = command.ExecuteScalar();
 
+<<<<<<< HEAD
+=======
+
+<<<<<<< Updated upstream
+=======
+                    //    if (PhoneInput == "123" && txtPassword.Text == "123")
+                     //   {
+                      //      frm_staff frm_staff = new frm_staff();
+                      //     frm_staff.Show();
+                      // }
+>>>>>>> Stashed changes
+>>>>>>> c404c30353f3d4f91a6baa124b854ee47846381f
                         if (role != null)
                         {
 
