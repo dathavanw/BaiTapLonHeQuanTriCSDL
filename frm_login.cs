@@ -51,6 +51,21 @@ namespace BaiTapLonHeQuanTriCSDL
 
         private void btn_login_Click(object sender, EventArgs e)
         {
+
+            if (string.IsNullOrWhiteSpace(txtUsername.Text))
+            {
+                MessageBox.Show("Vui lòng nhập số điện thoại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtUsername.Focus();
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtPassword.Text))
+            {
+                MessageBox.Show("Vui lòng nhập mật khẩu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtPassword.Focus();
+                return;
+            }
+
             // đây là chuỗi kết nối đến csdl trên máy của tôi 
             string connectionString = @"Data Source=ADMIN-PC;Initial Catalog=QLMP;Integrated Security=True";
 
