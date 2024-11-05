@@ -16,7 +16,7 @@ namespace BaiTapLonHeQuanTriCSDL
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frm_staff());
+            Application.Run(new frm_login());
         }
     }
 }

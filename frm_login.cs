@@ -81,12 +81,6 @@ namespace BaiTapLonHeQuanTriCSDL
 
                         var role = command.ExecuteScalar();
 
-
-                        if (PhoneInput == "123" && txtPassword.Text == "123")
-                        {
-                            frm_staff frm_staff = new frm_staff();
-                            frm_staff.Show();
-                        }
                         if (role != null)
                         {
 
@@ -100,8 +94,8 @@ namespace BaiTapLonHeQuanTriCSDL
                             else if (role.ToString() == "management")
                             {
                                 // Mở form dành cho quản lý
-                                //frm_manager frm_manager = new frm_manager();
-                                //frm_manager.Show();
+                                frm_manager frm_manager = new frm_manager();
+                                frm_manager.Show();
                             }
 
                             this.Hide();
